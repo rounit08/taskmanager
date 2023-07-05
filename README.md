@@ -103,5 +103,3 @@ The `excelUtils.js` file in the `src/utils` directory provides utility functions
 ## Conclusion
 
 The Task Manager application offers a simple yet powerful task management solution. With its intuitive interface and essential features, users can efficiently organize and track their tasks. The ability to export the task list to Excel adds an extra level of convenience for further analysis and record-keeping.
-
-Feel free to explore and customize the Task Manager application according to your specific needs and preferences.
