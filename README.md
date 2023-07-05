@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+Task Manager Documentation
+Task Manager is a web application built using React that allows users to manage their tasks effectively. It provides a user-friendly interface to add, update, and delete tasks, as well as the ability to export the task list to an Excel file.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Table of Contents
+Features
+Installation
+Usage
+Components
+Utils
+Features
+Add Task: Users can add new tasks to the task list by entering a task title.
+Update/Delete Task: Users can update or delete existing tasks in the task list.
+Move Card to Another List: Users can move a task card from one list to another.
+Export to Excel: Users can export the entire task list to an Excel file for further analysis or record-keeping.
+Installation
+To install and run the Task Manager application locally, follow these steps:
 
-## Available Scripts
+Clone the repository:
 
-In the project directory, you can run:
+shell
+Copy code
+git clone <repository-url>
+Navigate to the project directory:
 
-### `npm start`
+shell
+Copy code
+cd task-manager
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+shell
+Copy code
+npm install
+Start the development server:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+shell
+Copy code
+npm start
+Open the application in your browser at http://localhost:3000.
 
-### `npm test`
+Usage
+Adding a Task:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enter a task title in the input field and click the "Add Task" button. The new task will be added to the task list.
+Updating a Task:
 
-### `npm run build`
+Click the "Edit" button on a task card to enter edit mode.
+Modify the task title or other details.
+Click the "Save" button to save the changes.
+Deleting a Task:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Click the "Delete" button on a task card to remove the task from the list.
+Moving a Task Card:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+(To be implemented)
+Exporting to Excel:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Click the "Export to Excel" button to download the task list as an Excel file (task_list.xlsx).
+Components
+The Task Manager application is built using the following React components:
 
-### `npm run eject`
+TaskManager: The main component that holds the entire application. It manages the task list and provides callbacks to add, update, and delete tasks.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+TaskList: Displays the list of tasks and provides an input field and button to add new tasks. It receives the task list and callbacks from the TaskManager component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+TaskCard: Represents an individual task in the task list. It displays the task title, description, and provides buttons to edit or delete the task.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Utils
+The excelUtils.js file in the src/utils directory provides utility functions related to exporting tasks to Excel:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+exportTasksToExcel(tasks): Converts the task list to an Excel file and prompts the user to download it.
+saveAsExcelFile(buffer, fileName): Saves the Excel file by creating a download link and triggering a click event.
+Conclusion
+The Task Manager application offers a simple yet powerful task management solution. With its intuitive interface and essential features, users can efficiently organize and track their tasks. The ability to export the task list to Excel adds an extra level of convenience for further analysis and record-keeping.
 
-## Learn More
+Feel free to explore and customize the Task Manager application according to your specific needs and preferences.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
