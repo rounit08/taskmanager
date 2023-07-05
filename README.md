@@ -22,7 +22,7 @@ To install and run the Task Manager application locally, follow these steps:
 
 1. Clone the repository:
    ```shell
-   git clone <repository-url>
+   git clone https://github.com/rounit08/taskmanager
    ```
 
 2. Navigate to the project directory:
